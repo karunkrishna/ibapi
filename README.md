@@ -1,3 +1,5 @@
+NOTE: This was taken from Interactive Brokers so it can be easily pip installed 
+
 A couple of things/definitions/conventions:
 * a *low level message* is some data prefixed with its size
 * a *high level message* is a list of fields separated by the NULL character; the fields are all strings; the message ID is the first field, the come others whose number and semantics depend on the message itself
