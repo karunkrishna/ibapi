@@ -3,10 +3,11 @@ Copyright (C) 2019 Interactive Brokers LLC. All rights reserved. This code is su
  and conditions of the IB API Non-Commercial License or the IB API Commercial License, as applicable.
 """
 
+from ibapi.object_implem import Object
 from ibapi.common import UNSET_DOUBLE
 
 
-class OrderState:
+class OrderState(Object):
 
     def __init__(self):
         self.status= ""
@@ -30,4 +31,4 @@ class OrderState:
         self.completedStatus = ""
 
     def __str__(self):
-        return self.status
+        return '%s %s'.format(self.status, self.warningText)
