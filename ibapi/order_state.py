@@ -28,3 +28,6 @@ class OrderState:
         self.warningText = ""
         self.completedTime = ""
         self.completedStatus = ""
+
+    def __str__(self):
+        return self.status
